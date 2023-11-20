@@ -34,7 +34,7 @@ router.put('/products/:productId', authenticateJWT, async (req, res) => {
     const { productId } = req.params;
     const userId = req.locals.user.id; // JWT로부터 사용자 ID 가져오기
 
-    const product = await Product.find(productId);
+    const product = await Product.findByPk(productId);
 
     if (!product) {
       return res.status(404).json({ message: '상품 조회에 실패하였습니다.' });
