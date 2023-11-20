@@ -56,7 +56,8 @@ https://docs.google.com/spreadsheets/d/1YH8MJ7j30qmIX3DJhfzUy-LnC1O_UBxmpUgFxp8M
 
 \*\*MongoDB, Mongoose를 이용해 구현되었던 코드를 MySQL, Sequelize로 변경하면서, 많은 코드 변경이 있었나요? 주로 어떤 코드에서 변경이 있었나요?
 =>
-우선 저는 ES6 모듈로 설계를 해서 CMJS로 설정된 값을 변경했습니다.
+우선 저는 ES모듈로 설계를 해서 CMJS에서 es모듈로 설정된 값을 변경했습니다.
+그리고 차이점이라면? findById에서 findByPk바뀐거 정도인 것 같습니다.
 
 ---
 
